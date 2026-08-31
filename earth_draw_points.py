@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 labels_obliq = ['E(3/20)', 'N(6/21)',  'F(9/22)', 'S(12/22)'] #황도경사
-labels_ecc = ['P(1/4)', '', 'A(7/4)'] #이심률
+labels_ecc = ['P(1/4)', 'A(7/3)'] #이심률
 
 def add_eot_labels(t0, delay1, delay2_shifted, total_delay):
     zero_crossings_obliq = np.where(np.diff(np.sign(delay2_shifted)))[0]
